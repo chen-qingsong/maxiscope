@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Window caption="0,0,0,32" roundcorner="5,5,5,5" sizebox="4,4,4,4" mininfo="600,320"> <!--窗口的初始尺寸-->
+<Font name="宋体" size="13" bold="false"/>
+<Font name="宋体" size="12"/>
+	<VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0"> <!--整个窗口按一列排列-->
+		<HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FFAAAAA0"><!--标题栏开始-->
+			<VerticalLayout>
+				<Text text="MaxiScope" textcolor="#FFFF0000" front="1" float="true" pos="10,10,80,32"/>
+			</VerticalLayout>
+			<VerticalLayout width="77"><!---->
+				<Button name="minbtn" float="true" pos="0,5,22,24" tooltip="Minimize" width="23" normalimage="MinNormal.bmp" hotimage="MinFocus.bmp" pushedimage="MinFocus.bmp"/>
+				<Button name="maxbtn" float="true" pos="22,5,44,24" tooltip="Maximize" width="23" normalimage="MaxNormal.bmp" hotimage="MaxFocus.bmp" pushedimage="MaxFocus.bmp"/>
+				<Button name="restorebtn" float="true" pos="22,5,44,24" visible="false" tooltip="Restore" normalimage="StoreNormal.bmp" hotimage="StoreFocus.bmp" pushedimage="StoreFocus.bmp"/>
+				<Button name="closebtn" float="true" pos="44,5,74,24" tooltip="Close" width="28" normalimage="CloseNormal.bmp" hotimage="CloseFocus.bmp" pushedimage="CloseFocus.bmp"/>
+			</VerticalLayout>
+		</HorizontalLayout><!--标题栏结束-->
+		
+		<HorizontalLayout><!--客户区开始-->
+			<Vernier name="btnvernier" tooltip="vernierpoint" float="true" pos="100,100,0,0" width="10" height="10" normalimage="VernierNormal.bmp"/> 
+		</HorizontalLayout><!--客户区结束-->
+	</VerticalLayout>
+	
+	
+</Window>
